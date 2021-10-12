@@ -1,0 +1,99 @@
+
+.footnote {
+  margin-bottom: 2px;
+}
+
+.articleEditor {
+  border: 2px solid black;
+  max-width: 680px;
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  text-height: 1.25em;
+}
+
+.text-box {
+  border: 1px;
+  padding: 5px;
+  margin: auto;
+}
+
+.text-box textarea, .text-box input {
+  box-shadow: var(--box-shadow);
+}
+
+.bodyTextBox {
+  min-height: 400px;
+}
+
+.footing {
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+.footing div {
+  display: inline-flex;
+  width: 49%;
+  padding: 5px;
+  margin: auto;
+  height: 99%;
+}
+
+.footing textarea {
+  width: 100%;
+  min-height: 100px;
+}
+
+.tagsTextBox textarea {
+
+}
+
+.descriptionTextBox {
+  text-align: center;
+}
+
+.descriptionTextBox textarea {
+  width: 70%;
+  min-height: 150px;
+}
+
+.bodyTextBox textarea {
+  width: 100%;
+  min-height: 400px;
+  
+  padding: 10px;
+  outline: none;
+  
+}
+
+.titleTextBox {
+  text-align: center;
+  margin: 4px;
+}
+
+.titleTextBox input {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 80%;
+  text-align: center;
+  overflow: auto;
+}
+
+.form-control:focus {
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.stdButton {
+  display: block;
+  min-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
