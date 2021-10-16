@@ -1,4 +1,11 @@
-.article-body p {
+
+textarea.darkmode {
+    
+    background: #333333;
+
+}
+
+article p {
   text-indent: 2em;
 }
 
@@ -28,7 +35,7 @@
 }
 
 .navbar {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .mode-box-shadow {
@@ -44,7 +51,7 @@
   text-align: center;
 }
 
-div.separator {
+separator {
   border: 1px solid black;
   display: block;
   width: 100%;

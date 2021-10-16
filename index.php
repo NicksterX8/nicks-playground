@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nick's Playground - Home</title>
     <?php include "dependencies.php";?>
+
 <?php 
 $verified = false;
 if (isset($_SESSION["verified"]) && ($_SESSION["verified"])) {
@@ -16,15 +18,17 @@ if (isset($_SESSION["verified"]) && ($_SESSION["verified"])) {
 
     <div class="main-content mode-box-shadow">
       
-      <div class="article">
+      <article>
         <p>
           Welcome to Nick's Playground!
         </p>
         <p>
           Under development, go away
         </p>
-      </div>
-      
+      </article>
+
+    <?php articlePreview(2); ?>
+
       <h2>Recent Posts:</h2>
       <div id="recent-posts"> 
       

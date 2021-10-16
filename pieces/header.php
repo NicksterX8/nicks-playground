@@ -44,7 +44,7 @@ $verified = false;
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="https://mytekserver.com/student/nick913/NicksPlayground/dev">Home</a></li>
-            <li><a class="dropdown-item" href="#">IDk lol</a></li>
+            <li><a class="dropdown-item" href="https://mytekserver.com/student/nick913/NicksPlayground/dev/new.php">New</a></li>
             
             <li><a class="dropdown-item" href="#">whatever u want</a></li>
           </ul>

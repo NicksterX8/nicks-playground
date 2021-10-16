@@ -7,12 +7,12 @@ if ($_SESSION["verified"]) {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Nick's Playground - Home</title>
+    <title>Nick's Playgrounmbowyg-dark</title>
     <?php include "../dependencies.php";?>
     <!--CSS-->
     <link href="https://mytekserver.com/student/nick913/NicksPlayground/dev/new.css" rel="stylesheet">
     <!--Other-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.25.1/ui/trumbowyg.min.css">
   </head>
   <body>
     <?php include "../pieces/header.php"; ?>
@@ -33,7 +33,10 @@ if ($_SESSION["verified"]) {
           </div> 
           <div class="separator"></div>
           <div class="text-box bodyTextBox"> 
-            <textarea type="text" name="body" placeholder="What do you want to write today?" class="mode-box-shadow"></textarea> 
+            <textarea type="text" name="body" placeholder="What do you want to write today?" class="mode-box-shadow"></textarea>
+            <div class="trumbowyg">
+                <textarea id="editor"></textarea>
+            </div>
           </div>         
           <div class="separator"></div>
           <div class="footing"> 
@@ -57,13 +60,23 @@ if ($_SESSION["verified"]) {
       </div> 
 
     <?php include("../pieces/footer.php");?> 
+
+    <!-- Import jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+    
+    <script src="trumbowyg/dist/trumbowyg.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
+<!-- Import Trumbowyg -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.25.1/trumbowyg.min.js"></script>
 </body>
 <style>
 
 </style>
 <script>
  //scripts
- 
+    $('#editor').trumbowyg(); 
 </script>
 </html>
 
