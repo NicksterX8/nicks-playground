@@ -11,7 +11,7 @@ $verified = false;
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mode-box-shadow">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/../">Nick's Playground</a>
+    <a class="navbar-brand" href="index.html">Nick's Playground</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,7 +33,7 @@ $verified = false;
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="/about.html">About</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
 	<?php
           if ($verified) {
@@ -43,8 +43,8 @@ $verified = false;
             Dev
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/dev/">Home</a></li>
-            <li><a class="dropdown-item" href="/dev/new.html">New</a></li>
+            <li><a class="dropdown-item" href="dev/">Home</a></li>
+            <li><a class="dropdown-item" href="dev/new.html">New</a></li>
             
             <li><a class="dropdown-item" href="#">whatever u want</a></li>
           </ul>

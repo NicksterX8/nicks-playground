@@ -37,21 +37,25 @@ article p {
   color: white;
   background: #222222;
   --box-shadow: 0px 0px 15px 3px grey;
+  /*
   transition: color 1.5s ease-in-out;
   transition: background 1.5s ease-in-out;
 
   transition: all 1s linear;
+  */
 }
 
 .light-mode {
   color: black;
   background: white;
   --box-shadow: 3px 3px 6px 3px #cccccc;
+  /*
   transition: var(--box-shadow) 1.5s ease-in-out;
   transition: color 1.5s ease-in-out;
   transition: background 1.5s ease-in-out;
 
   transition: all 1s linear;
+  */
 }
 
 .navbar {
