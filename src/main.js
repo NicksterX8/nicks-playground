@@ -12,3 +12,7 @@ function includeFile(src, id, divtype, section) {
     }
     $(function(){ $("#" + id).load(src); });
 }
+
+function foo() {
+    console.log("foo")
+}

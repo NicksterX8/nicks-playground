@@ -1,0 +1,23 @@
+article-preview {
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid black;
+    display: block;
+  }
+  
+  article-preview:hover {
+    border: 1px solid blue;
+  }
+  
+  .article-preview-title {
+    display: inline-flex;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .article-preview-read-button {
+    display: inline-block;
+  }
