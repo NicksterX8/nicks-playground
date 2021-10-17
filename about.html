@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="">
     <title>Nick's Playground - Untitled</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- import jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- import all core scripts, including includeFile -->
-    <script src="/src/main.js"></script>
+    <script src="src/main.js"></script>
     
-    <script>includeFile("/dependencies.php", "dependencies", "script", "head") </script>
+    <script>includeFile("dependencies.php", "dependencies", "script", "head") </script>
 
     <!-- import file specific scripts -->
     <script> </script>
@@ -20,7 +21,7 @@
   </head>
   <body>
     
-    <script>includeFile("/pieces/header.php", "header")</script>
+    <script>includeFile("pieces/header.php", "header")</script>
 
     <div class="main-content mode-box-shadow">
       
@@ -49,7 +50,7 @@
     </div>
   </div>
 
-    <script>includeFile("/pieces/footer.php", "footer")</script>
+    <script>includeFile("pieces/footer.php", "footer")</script>
 
   </body>
   <style>
