@@ -2,37 +2,42 @@
 <html lang="en">
   <head>
     <title>Nick's Playground - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- import jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script id="dependencies"></script>
-    <script> $(function(){ $("#dependencies").load("../dependencies.php"); }); </script>
+    <!-- import all core scripts, including includeFile -->
+    <script src="/src/main.js"></script>
+    
+    <script>includeFile("/dependencies.php", "dependencies", "script", "head") </script>
+
+    <!-- import file specific scripts -->
+    <script> </script>
+
+    <!-- import file specific style -->
+    <link href="" rel="stylesheet">
+
   </head>
   <body>
+    
+    <script>includeFile("/pieces/header.php", "header")</script>
 
-    <script> $(function(){ $("#header").load("../pieces/header.php"); }); </script>
-    <div id="header"></div>
-
-
-    <script> includeFile </script>
-
-
-    <button onclick="console.log(foo())">foo!</button>
-
-<div class="main-content mode-box-shadow">
+    <div class="main-content mode-box-shadow">
       
-      <div class="article">
+      <article>
+        <div class="title">An awesome title</div>
         <p>
           This is the start of a new page!!!
         </p>
-      </div>
+      </article>
       
     </div>
 
-</body>
-<style>
+  </body>
+  <style>
 
-</style>
-<script>
+  </style>
+  <script>
 
-</script>
+  </script>
 </html>
