@@ -1,5 +1,0 @@
-this is a text file,
-it is a test
-cool stuff
-dumb stuff
-things end.

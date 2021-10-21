@@ -1,21 +1,28 @@
-<?php
-session_start();
-if ($_SESSION["verified"]) {
-  $verified = true;
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Nick's Playgrounmbowyg-dark</title>
-    <?php include "../dependencies.php";?>
-    <!--CSS-->
-    <link href="https://mytekserver.com/student/nick913/NicksPlayground/dev/new.css" rel="stylesheet">
-    <!--Other-->
+    <base href="../">
+    <title>Nick's Playground - Untitled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- import jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- import all core scripts, including includeFile -->
+    <script src="src/main.js"></script>
+    
+    <script>includeFile("dependencies.php", "dependencies", "script", "head") </script>
+
+    <!-- import file specific scripts -->
+    <script></script>
+
+    <!-- import file specific style -->
+    <link href="dev/new.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.25.1/ui/trumbowyg.min.css">
+
   </head>
   <body>
-    <?php include "../pieces/header.php"; ?>
+    
+    <script>includeFile("pieces/header.php", "header")</script>
 
     <div class="title">
         <h2>
@@ -27,18 +34,17 @@ if ($_SESSION["verified"]) {
           <div class="text-box titleTextBox"> 
             <input type="text" name="title" placeholder="Title"> 
           </div> 
-          <div class="separator"></div>
+          <hr>
           <div class="text-box descriptionTextBox"> 
             <textarea type="text" name="description" placeholder="Description"></textarea> 
           </div> 
-          <div class="separator"></div>
+          <hr>
           <div class="text-box bodyTextBox"> 
-            <textarea type="text" name="body" placeholder="What do you want to write today?" class="mode-box-shadow"></textarea>
-            <div class="trumbowyg">
-                <textarea id="editor"></textarea>
+            <div class="trumbowyg trumbowyg-dark" id="trumbowyg">
+                <textarea id="editor" placeholder="What would you like to write today?"></textarea>
             </div>
           </div>         
-          <div class="separator"></div>
+          <hr>
           <div class="footing"> 
             <div class="text-box footingTextBox tagsTextBox"> 
               <textarea type="text" name="tags" placeholder="Tags"></textarea> 
@@ -57,31 +63,24 @@ if ($_SESSION["verified"]) {
       <div class="main-content"> 
        
        
-      </div> 
+      </div>
 
-    <?php include("../pieces/footer.php");?> 
-
-    <!-- Import jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-    
+          
     <script src="trumbowyg/dist/trumbowyg.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script>window.jQuery</script>
+    
+    <!-- Import Trumbowyg -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.25.1/trumbowyg.min.js"></script>
 
-<!-- Import Trumbowyg -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.25.1/trumbowyg.min.js"></script>
-</body>
-<style>
+  </body>
+  <style>
 
-</style>
-<script>
- //scripts
-    $('#editor').trumbowyg(); 
-</script>
+  </style>
+  <script>
+      $('#editor').trumbowyg();
+
+      function toggleThemeButtonClickedExtension() {
+        $("#trumbowyg").toggleClass("trumbowyg-dark")
+      }
+  </script>
 </html>
-
-<?php
-} else {
-  header("Location: ../verification.php?continue=" . $_SERVER["SCRIPT_NAME"]);
-}
-?>

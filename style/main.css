@@ -1,8 +1,24 @@
 
-textarea.darkmode {
-    
-    background: #333333;
+:root {
+  --custom-dark: #222222;
+}
 
+.dark-mode input {
+  border: 1px solid white;
+  background: var(--bs-dark);
+}
+
+.dark-mode input:hover {
+  background: white;
+  color: black;
+}
+
+
+
+.dark-mode textarea, .dark-mode input {
+  background: var(--custom-dark);
+  border: 1px solid white;
+  color: white
 }
 
 article p {
@@ -19,19 +35,27 @@ article p {
 
 .dark-mode {
   color: white;
-  background-color: #222222;
+  background: #222222;
   --box-shadow: 0px 0px 15px 3px grey;
-  transition: all 1.5s ease-in-out;
+  /*
+  transition: color 1.5s ease-in-out;
+  transition: background 1.5s ease-in-out;
+
+  transition: all 1s linear;
+  */
 }
 
 .light-mode {
   color: black;
-  background-color: white;
+  background: white;
   --box-shadow: 3px 3px 6px 3px #cccccc;
-  transition: all 1.5s ease-in-out;
-}
+  /*
+  transition: var(--box-shadow) 1.5s ease-in-out;
+  transition: color 1.5s ease-in-out;
+  transition: background 1.5s ease-in-out;
 
-#styleModeToggler {
+  transition: all 1s linear;
+  */
 }
 
 .navbar {
