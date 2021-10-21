@@ -2,21 +2,36 @@
 <html lang="en">
   <head>
     <base href="">
-    <title>Nick's Playground - Untitled</title>
+    <title>Nick's Playground - About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- import jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- import all core scripts, including includeFile -->
     <script src="src/main.js"></script>
     
-    <script>includeFile("dependencies.php", "dependencies", "script", "head") </script>
+    <!-- boot strap css -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<!--bootstrap js dependency-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+<!--main css-->
+<link href="style/main.css" rel="stylesheet">
+
+
+    <script id="dependencies"></script>
+
+    <script>
+      $('#dependencies').load("dependencies.php")
+    //includeFile("dependencies.php", "dependencies", "script", "head") </script>
 
     <!-- import file specific scripts -->
     <script> </script>
 
     <!-- import file specific style -->
     <link  rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
 
   </head>
   <body>
