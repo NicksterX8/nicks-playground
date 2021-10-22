@@ -24,6 +24,6 @@
     ],
     "theme_color": "#222222",
     "background_color": "#FFFFFF",
-    "display": "fullscreen",
+    "display": "minimal-ui",
     "orientation": "portrait"
 }
