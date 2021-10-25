@@ -12,7 +12,8 @@
 
     "start": "node index.js",
 
-    "launch": "npm run start \n git push -f origin build:gh-pages",
+    "launch": "npm start \n git push -f origin build:build",
+    "pushAll": "git add . \n git commit -m 'auto' ",
 
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

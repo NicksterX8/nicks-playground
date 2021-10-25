@@ -4,7 +4,7 @@ description: idk anymore
 layout: post.html
 ---
 
-## will this work?
+## will this wok?
 
 I hope it did!
 it didnt
