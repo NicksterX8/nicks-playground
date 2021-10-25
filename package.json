@@ -1,12 +1,16 @@
 {
-  "name": "static-site-example",
+
+  "name": "nicks-playground",
   "private": true,
   "dependencies": {
     "handlebars": "^4.0.5",
     "metalsmith-permalinks": "^0.5.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "version": "1.0.0",
   "main": "index.js",
@@ -20,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/NicksterX8/nicks-playground/issues"
   },
-  "homepage": "https://github.com/NicksterX8/nicks-playground#readme",
+  "homepage": "https://github.com/NicksterX8/nicks-playground",
   "description": "",
   "devDependencies": {
     "jstransformer-handlebars": "^1.1.0",
