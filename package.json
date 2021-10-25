@@ -12,7 +12,7 @@
 
     "start": "node index.js",
 
-    "launch": "",
+    "launch": "npm run start \n git push -f origin build:gh-pages",
 
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
