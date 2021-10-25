@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="">
     <title>Nick's Playground - Untitled</title>
-    <base href="../">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- import jquery -->
@@ -16,22 +16,32 @@
     <script> </script>
 
     <!-- import file specific style -->
-    <link  rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
 
   </head>
   <body>
     
-    <script>includeFile("pieces/header.php", "header")</script>
-
-    <div class="main-content mode-box-shadow">
-      
+  <script>includeFile("pieces/header.php", "header")</script>
+    <div class="main-content mode-box-shadow">      
       <article>
-        <div class="title">An awesome title</div>
         <p>
-          This is the start of  new page!!!
+          Welcome to Nick's Playground!
+        </p>
+         <p>
+          Under development, go away
         </p>
       </article>
-      
+  
+      <h2>Recent Posts:</h2>
+      <div id="recent-posts"> 
+        
+        <article-preview class="mode-box-shadow" reverse-order="true" article-id="0">article preview</article-preview>
+        <article-preview class="mode-box-shadow" reverse-order="true" article-id="1">article preview</article-preview>
+        <article-preview class="mode-box-shadow" reverse-order="true" article-id="2" href="#">
+          article preview
+        </article-preview>
+        
+      </div>
     </div>
 
     <script>includeFile("pieces/footer.php", "footer")</script>
