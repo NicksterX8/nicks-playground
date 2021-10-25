@@ -121,7 +121,17 @@
      </script>
   </nav>
 
-    {{ body }}
+    <div class="main-content">
+
+      <h2 class="title">{{ title }}</h2>
+
+      {{{ body }}}
+
+      <i>{{{ tags }}}</i>
+
+    </div>
+
+    
     
   </body>
 </html>
