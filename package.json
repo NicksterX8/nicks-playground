@@ -9,6 +9,8 @@
   "scripts": {
     "start": "node index.js",
 
+    "launch": "git push -d origin gh-pages \n git subtree push --prefix build origin gh-pages",
+
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
