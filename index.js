@@ -12,7 +12,7 @@ Metalsmith(__dirname)
   })
   .source('./src')
   .destination('./docs')
-  .clean(false)
+  .clean(true)
   .use(markdown())
   .use(permalinks())
   .use(layouts({
