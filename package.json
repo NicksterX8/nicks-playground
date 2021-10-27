@@ -8,11 +8,9 @@
   },
   "scripts": {
 
-
-
     "start": "node index.js",
 
-    "launch": "npm start \n git push -f origin build:build",
+    "launch": "npm start",
     "pushAll": "git add . \n git commit -m 'auto' ",
 
     "predeploy": "npm run build",
