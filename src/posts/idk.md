@@ -1,7 +1,7 @@
 ---
 title: What is going on
 description: idk anymore
-layout: post.html
+layout: post.hbs
 ---
 
 ## will this wok?
