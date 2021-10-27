@@ -10,7 +10,7 @@
 
     "start": "node index.js",
 
-    "launch": "npm start",
+    "launch": "npm start \n npm run pushAll \n git push -f",
     "pushAll": "git add . \n git commit -m 'auto' ",
 
     "predeploy": "npm run build",
