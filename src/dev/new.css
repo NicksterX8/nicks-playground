@@ -1,28 +1,4 @@
 
-.trumbowyg-box,
-.trumbowyg-editor {
-    min-height: unset!important;
-}
-
-.trumbowyg-editor, 
-.trumbowyg-textarea {
-    min-height: 400px!important;
-    resize: vertical!important;	
-}
-
-.dark-mode .trumbowyg  {
-  border: 1px solid white;
-}
-
-.dark-mode .trumbowyg {
-  box-shadow: var(--box-shadow);
-  background: var(--custom-dark);
-}
-
-.trumbowyg-button-pane {
-  box-shadow: var(--box-shadow);
-}
-
 .footnote {
   margin-bottom: 2px;
 }

@@ -8,16 +8,14 @@ if ($_SESSION["verified"]) {
 <html lang="en">
   <head>
     <title>Nick's Playgrounmbowyg-dark</title>
-    <?php include "../dependencies.php";?>
+    <?php include "../../dependencies.php";?>
     <!--CSS-->
     <link href="https://mytekserver.com/student/nick913/NicksPlayground/dev/new.css" rel="stylesheet">
     <!--Other-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.25.1/ui/trumbowyg.min.css">
-  </head>
   <body>
-    <?php include "../pieces/header.php"; ?>
+    <?php include "../../pieces/header.php"; ?>
 
-    <div class="title">
+      <div class="title">
         <h2>
           <p>Article Creator</p>
         </h2>
@@ -56,17 +54,14 @@ if ($_SESSION["verified"]) {
        
       </div> 
 
-    <?php include("../pieces/footer.php");?> 
+    <?php include("../../pieces/footer.php");?> 
 
     <!-- Import jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 </script>
     
-    <script src="trumbowyg/dist/trumbowyg.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
 
-<!-- Import Trumbowyg -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.25.1/trumbowyg.min.js"></script>
 </body>
 <style>
 
@@ -78,6 +73,6 @@ if ($_SESSION["verified"]) {
 
 <?php
 } else {
-  header("Location: ../verification.php?continue=" . $_SERVER["SCRIPT_NAME"]);
+  header("Location: ../../verification.php?continue=" . $_SERVER["SCRIPT_NAME"]);
 }
 ?>
