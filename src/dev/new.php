@@ -1,4 +1,6 @@
 <?php
+$base_href = "../";
+
 session_start();
 if ($_SESSION["verified"]) {
   $verified = true;
@@ -9,12 +11,12 @@ if ($_SESSION["verified"]) {
   <head>
     <title>Nick's Playgrounmbowyg-dark</title>
     <base href="../">
-    <?php include "../../dependencies.php";?>
+    <?php include $base_href . "../dependencies.php";?>
     <!--CSS-->
     <link href="https://mytekserver.com/student/nick913/NicksPlayground/dev/new.css" rel="stylesheet">
     <!--Other-->
   <body>
-    <?php include "../pieces/header.php"; ?>
+    <?php include $base_href . "pieces/header.php"; ?>
 
       <div class="title">
         <h2>
