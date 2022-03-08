@@ -8,6 +8,7 @@ if ($_SESSION["verified"]) {
 <html lang="en">
   <head>
     <title>Nick's Playgrounmbowyg-dark</title>
+    <base href="../">
     <?php include "../../dependencies.php";?>
     <!--CSS-->
     <link href="https://mytekserver.com/student/nick913/NicksPlayground/dev/new.css" rel="stylesheet">
