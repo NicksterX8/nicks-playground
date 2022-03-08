@@ -13,7 +13,7 @@ if ($_SESSION["verified"]) {
     <link href="https://mytekserver.com/student/nick913/NicksPlayground/dev/new.css" rel="stylesheet">
     <!--Other-->
   <body>
-    <?php include "../../pieces/header.php"; ?>
+    <?php include "../pieces/header.php"; ?>
 
       <div class="title">
         <h2>
@@ -54,7 +54,7 @@ if ($_SESSION["verified"]) {
        
       </div> 
 
-    <?php include("../../pieces/footer.php");?> 
+    <?php include("../pieces/footer.php");?> 
 
     <!-- Import jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
