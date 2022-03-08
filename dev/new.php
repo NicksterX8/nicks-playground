@@ -34,9 +34,6 @@ if ($_SESSION["verified"]) {
           <div class="separator"></div>
           <div class="text-box bodyTextBox"> 
             <textarea type="text" name="body" placeholder="What do you want to write today?" class="mode-box-shadow"></textarea>
-            <div class="trumbowyg">
-                <textarea id="editor"></textarea>
-            </div>
           </div>         
           <div class="separator"></div>
           <div class="footing"> 
@@ -75,8 +72,7 @@ if ($_SESSION["verified"]) {
 
 </style>
 <script>
- //scripts
-    $('#editor').trumbowyg(); 
+
 </script>
 </html>
 
