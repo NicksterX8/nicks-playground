@@ -31,7 +31,8 @@ $body = convertToHTML($_POST["body"]);
 $footnote = $_POST["footnote"];
 $tags = $_POST["tags"];
 
-$post_file = fopen("src/posts/" . $titleURL . ".php", "w+"); 
+$post_file_name = "src/posts/" . $titleURL . ".php";
+$post_file = fopen($post_file_name, "w+"); 
 
 $page = '
 
@@ -96,5 +97,5 @@ $text = "@TITLE: " . $title . "\n" .
 	"@FOOTNOTE: " . $_POST["footnote"] . "\n";
 fwrite($text_file, $text);
 fclose($text_file);
-header("Location: src/posts/" . $titleURL . ".php");
+header("Location: " . $post_file_name);
 ?>

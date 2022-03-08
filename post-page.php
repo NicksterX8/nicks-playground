@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Nick's Playground - Home</title>
-    <?php include "dependencies.php";?>
+    <?php include "src/dependencies.php";?>
 
 <?php 
 $verified = false;
@@ -28,7 +28,7 @@ if (isset($_SESSION["verified"]) && ($_SESSION["verified"])) {$verified = true;}
       
     </div>
 
-    <?php include("pieces/footer.php");?> 
+    <?php include("src/pieces/footer.php");?> 
 
 </body>
 <style>
