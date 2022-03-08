@@ -23,7 +23,7 @@ if ($_SESSION["verified"]) {
           <p>Article Creator</p>
         </h2>
       </div> 
-      <form action="post-new.php" method="post"> 
+      <form action="../post-new.php" method="post"> 
         <div class="articleEditor mode-box-shadow" id="articleEditor"> 
           <div class="text-box titleTextBox"> 
             <input type="text" name="title" placeholder="Title"> 
@@ -76,6 +76,6 @@ if ($_SESSION["verified"]) {
 
 <?php
 } else {
-  header("Location: ../../verification.php?continue=" . $_SERVER["SCRIPT_NAME"]);
+  header("Location: " . $base_href . "../verification.php?continue=" . $_SERVER["SCRIPT_NAME"]);
 }
 ?>
