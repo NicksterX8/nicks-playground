@@ -96,7 +96,9 @@ function toggleThemeButtonClicked() {
 		setTheme("light")
 	}
 
-  toggleThemeButtonClickedExtension()
+  if (toggleThemeButtonClickedExtension) {
+    toggleThemeButtonClickedExtension()
+  }
 }
    </script>
 </nav>
